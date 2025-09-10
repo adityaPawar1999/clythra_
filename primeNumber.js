@@ -13,6 +13,7 @@ function isPrime(num) {
 
 // Print the first 20 prime numbers
 let count = 0;
+
 let num = 2;
 while (count < 20) {
     if (isPrime(num)) {
