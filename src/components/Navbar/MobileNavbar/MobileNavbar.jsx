@@ -37,14 +37,14 @@ const MobileNavbar = () => {
   };
 
   return (
-    <div className="lg:hidden fixed top-0 left-0 right-0 bg-white/30 backdrop-blur-md shadow-md z-[200]">
+    <div className="lg:hidden fixed top-0 left-0 right-0 bg-black/10 backdrop-blur-md border-b border-gray-200/20 z-[200]">
       <div className="flex justify-between items-center px-4 h-[40px]">
         <button 
           onClick={() => handleNavClick('hero')} 
           className={`text-2xl font-bold transition-colors ${
             activeSection === 'hero' 
               ? 'text-white' 
-              : 'text-blue-600 hover:text-white'
+              : 'text-blue-600 hover:text-gray-300'
           }`}
         >
           Clythra
@@ -59,46 +59,46 @@ const MobileNavbar = () => {
         </button>
       </div>
 
-      <div className={`absolute top-[40px] left-0 right-0 bg-white/30 backdrop-blur-md px-4 py-4 transform transition-all duration-300 ease-in-out ${
+      <div className={`absolute top-[40px] left-0 right-0 bg-black/10 backdrop-blur-md border-b border-gray-200/20 px-4 py-4 transform transition-all duration-300 ease-in-out ${
         isOpen ? 'translate-y-0 opacity-100 visible' : '-translate-y-full opacity-0 invisible'
       }`}>
         <div className="flex flex-col space-y-4">
           <button 
             onClick={() => handleNavClick('hero')}
-            className={`font-medium px-4 py-2 rounded-md transition-all text-left ${
+            className={`font-medium px-4 py-2 rounded-md transition-all text-left border-l-2 ${
               activeSection === 'hero'
-                ? 'text-blue-600 bg-white'
-                : 'text-white hover:text-blue-600 hover:bg-white/90'
+                ? 'text-white border-white'
+                : 'text-gray-300 border-transparent hover:text-gray-100 hover:border-gray-300'
             }`}
           >
             Home
           </button>
           <button 
             onClick={() => handleNavClick('about')}
-            className={`font-medium px-4 py-2 rounded-md transition-all text-left ${
+            className={`font-medium px-4 py-2 rounded-md transition-all text-left border-l-2 ${
               activeSection === 'about'
-                ? 'text-green-600 bg-white'
-                : 'text-white hover:text-green-600 hover:bg-white/90'
+                ? 'text-white border-white'
+                : 'text-gray-300 border-transparent hover:text-gray-100 hover:border-gray-300'
             }`}
           >
             About
           </button>
           <button 
             onClick={() => handleNavClick('services')}
-            className={`font-medium px-4 py-2 rounded-md transition-all text-left ${
+            className={`font-medium px-4 py-2 rounded-md transition-all text-left border-l-2 ${
               activeSection === 'services'
-                ? 'text-purple-600 bg-white'
-                : 'text-white hover:text-purple-600 hover:bg-white/90'
+                ? 'text-white border-white'
+                : 'text-gray-300 border-transparent hover:text-gray-100 hover:border-gray-300'
             }`}
           >
             Services
           </button>
           <button 
             onClick={() => handleNavClick('contact')}
-            className={`font-medium px-4 py-2 rounded-md transition-all text-left ${
+            className={`font-medium px-4 py-2 rounded-md transition-all text-left border-l-2 ${
               activeSection === 'contact'
-                ? 'text-orange-400 bg-white'
-                : 'text-white hover:text-orange-400 hover:bg-white/90'
+                ? 'text-white border-white'
+                : 'text-gray-300 border-transparent hover:text-gray-100 hover:border-gray-300'
             }`}
           >
             Contact

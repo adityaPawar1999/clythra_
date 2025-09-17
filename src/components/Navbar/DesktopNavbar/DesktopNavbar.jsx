@@ -27,7 +27,7 @@ const DesktopNavbar = () => {
   }, []);
 
   return (
-    <nav className="hidden lg:flex fixed top-0 left-0 right-0 h-[40px] bg-black/10 backdrop-blur-md shadow-md px-8 items-center z-[200]">
+    <nav className="hidden lg:flex fixed top-0 left-0 right-0 h-[40px] bg-black/10 backdrop-blur-md border-b border-gray-200/20 px-8 items-center z-[200]">
       {/* Logo on the left */}
       <div className="flex-none">
         <button 
@@ -35,7 +35,7 @@ const DesktopNavbar = () => {
           className={`text-3xl font-bold transition-colors ${
             activeSection === 'hero' 
               ? 'text-white' 
-              : 'text-blue-600 hover:text-white'
+              : 'text-blue-600 hover:text-gray-300'
           }`}
         >
           Clythra
@@ -47,40 +47,40 @@ const DesktopNavbar = () => {
         <div className="flex items-center space-x-8">
           <button 
             onClick={() => scrollToSection('hero')} 
-            className={`font-medium px-3 py-2 rounded-md transition-all ${
+            className={`font-medium px-3 py-2 rounded-md transition-all border-b-2 ${
               activeSection === 'hero'
-                ? 'text-blue-600 bg-white'
-                : 'text-white hover:text-blue-600 hover:bg-white/90'
+                ? 'text-white border-white'
+                : 'text-gray-300 border-transparent hover:text-gray-100 hover:border-gray-300'
             }`}
           >
             Home
           </button>
           <button 
             onClick={() => scrollToSection('about')} 
-            className={`font-medium px-3 py-2 rounded-md transition-all ${
+            className={`font-medium px-3 py-2 rounded-md transition-all border-b-2 ${
               activeSection === 'about'
-                ? 'text-green-600 bg-white'
-                : 'text-white hover:text-green-600 hover:bg-white/90'
+                ? 'text-white border-white'
+                : 'text-gray-300 border-transparent hover:text-gray-100 hover:border-gray-300'
             }`}
           >
             About
           </button>
           <button 
             onClick={() => scrollToSection('services')} 
-            className={`font-medium px-3 py-2 rounded-md transition-all ${
+            className={`font-medium px-3 py-2 rounded-md transition-all border-b-2 ${
               activeSection === 'services'
-                ? 'text-purple-600 bg-white'
-                : 'text-white hover:text-purple-600 hover:bg-white/90'
+                ? 'text-white border-white'
+                : 'text-gray-300 border-transparent hover:text-gray-100 hover:border-gray-300'
             }`}
           >
             Services
           </button>
           <button 
             onClick={() => scrollToSection('contact')} 
-            className={`font-medium px-3 py-2 rounded-md transition-all ${
+            className={`font-medium px-3 py-2 rounded-md transition-all border-b-2 ${
               activeSection === 'contact'
-                ? 'text-orange-400 bg-white'
-                : 'text-white hover:text-orange-400 hover:bg-white/90'
+                ? 'text-white border-white'
+                : 'text-gray-300 border-transparent hover:text-gray-100 hover:border-gray-300'
             }`}
           >
             Contact
