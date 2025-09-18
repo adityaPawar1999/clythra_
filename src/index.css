@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 html {
   scroll-behavior: smooth;
   height: 100%;
